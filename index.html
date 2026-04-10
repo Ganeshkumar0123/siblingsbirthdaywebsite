@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Login</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    
+    <div class="login-container glass-panel">
+        <h2 class="gradient-text" id="login-heading">welcome to login page</h2>
+        <p class="subtitle">Log in to unlock your special day!</p>
+        
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Enter Username (name)">
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Enter Password (date of birth)">
+        </div>
+        
+        <button class="primary-btn pulse-glow" onclick="login()">Login to Begin</button>
+        
+        <p id="error" class="error-msg"></p>
+    </div>
+
+    <!-- CRT Effect Overlay -->
+    <div class="crt-overlay">
+        <div class="crt-scanlines"></div>
+        <div class="crt-flicker"></div>
+        <div class="crt-glow"></div>
+        <div class="crt-noise"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

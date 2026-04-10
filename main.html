@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kanishka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-body">
+
+    <header class="glass-header">
+        <h2 class="logo" id="logo-heading">🎂 Happy Birthday Kanishka</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#photo">Photo</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#gifts">Gifts</a>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero-section">
+        <div class="hero-content slide-up">
+            <h1 class="left-align">Happy  Birthday  Kanishka 🎉</h1>
+            <h1 class="gradient-text huge-text">About Kanishka ✨</h1>
+            <p>SHE IS ONE WHO MAKES LAUGH FAMILY </p>
+            <p>SHE'S ALWAYS BEEN ANNOYING EVERYONE IN FAMILY .</p>
+            <p>Her smile makes every day brighter.</p>
+            <p class="highlight-text">Today is her special day ❤️</p>
+        </div>
+    </section>
+
+    <section id="photo" class="content-section">
+    <h1 class="section-title">Photo Gallery 📸</h1>
+
+    <div class="memories-slider">
+        <div class="gallery-item">
+            <img src="D:\photos\memories.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1530103862677-de3e1577bd91?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+        <div class="gallery-item">
+            <img src="D:\photos\memories0.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1530103862677-de3e1577bd91?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+        <div class="gallery-item">
+            <img src="D:\photos\memories1.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+
+        <div class="gallery-item">
+            <img src="D:\photos\memories2.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1464347744102-11db6282f854?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+        <div class="gallery-item">
+            <img src="D:\photos\memories3.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1530103862677-de3e1577bd91?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+        <div class="gallery-item">
+            <img src="D:\photos\memories4.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+        <div class="gallery-item">
+            <img src="D:\photos\memories5.jpg" alt="Memory"
+            onerror="this.src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=400&h=300';">
+        </div>
+    </div>
+</section>
+
+    <section id="quiz" class="content-section alternate-bg">
+        <h1 class="section-title">Fun Quiz 🧠</h1>
+        
+        <div id="quiz-box" class="glass-panel quiz-panel">
+            <p id="question" class="question-text"></p>
+            <div id="options" class="options-grid"></div>
+            <button class="secondary-btn" onclick="nextQuestion()">Next Question</button>
+        </div>
+        
+        <h2 id="score" class="score-display"></h2>
+    </section>
+
+    <section id="gifts" class="content-section">
+        <div class="gift-box slide-up">
+            <h1 class="section-title">Your Gift 🎁</h1>
+            <p class="gift-subtitle">A special something just for you!</p>
+            <button id="gift-btn" class="primary-btn gift-btn pulse-glow" onclick="showGiftImages()">Open Gift 🎀</button>
+        </div>
+
+        <div id="gift-images" class="gift-images hidden">
+            <div class="gift-photo"><img src="D:\photos\1st.png" alt="Gift Image 1" onerror="this.src='https://images.unsplash.com/photo-1530103862677-de3e1577bd91?auto=format&fit=crop&q=80&w=400&h=300'"></div>
+            <div class="gift-photo"><img src="D:\photos\2nd.png" alt="Gift Image 2" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=400&h=300'"></div>
+            <div class="gift-photo"><img src="D:\photos\3rd.png" alt="Gift Image 3" onerror="this.src='https://images.unsplash.com/photo-1464347744102-11db6282f854?auto=format&fit=crop&q=80&w=400&h=300'"></div>
+            <div class="gift-photo"><img src="D:\photos\4th.png" alt="Gift Image 4" onerror="this.src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=400&h=300'"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Powered by your siblings ❤️</p>
+    </footer>
+
+    <!-- CRT Effect Overlay -->
+    <div class="crt-overlay">
+        <div class="crt-scanlines"></div>
+        <div class="crt-flicker"></div>
+        <div class="crt-glow"></div>
+        <div class="crt-noise"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
